@@ -8,13 +8,13 @@ $(document).ready(function() {
 
 });	
 
-// $('.slider_container').Slick({
-// 	infinite: true,
-// 	slidesToShow: 3,
-// 	slidesToScroll: 1,
-// 	autoplay: true,
-// 	autoplaySpeed: 1000,
-// 	speed: 200,
-// 	dots: true,
-// 	swipeToSlide: true
-// });
+$('.slider_container').slick({
+	infinite: true,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	autoplay: true,
+	autoplaySpeed: 1000,
+	speed: 200,
+	dots: true,
+	swipeToSlide: true
+});

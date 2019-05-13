@@ -2,10 +2,9 @@
 @import "_libs"
 @import "_vars"
 
-// @import "../slider/slick.css"
-// @import "../slider/slick-theme.css"
-// @import "../slider/slick.js"
-// @import "../slider/s"
+@import "../slider/slick.css"
+@import "../slider/slick-theme.css"
+
 
 
 html, body, div, span, applet, object, iframe,
@@ -33,8 +32,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section 
 	display: block
 
-body 
-	line-height: 1
 
 ol, ul 
 	list-style: none
@@ -56,7 +53,7 @@ body
 	min-width: 320px
 	position: relative
 	overflow-x: hidden
-	line-height: 14px
+	line-height: 20px
 section
 	display: flex
 	justify-content: center
@@ -234,6 +231,7 @@ header
 			width: 100%
 			max-width: 940px
 			font-family: 'Bebas'
+			line-height: 16px
 			.block
 				display: flex
 				flex-direction: column
@@ -360,6 +358,7 @@ footer
 		display: flex
 		align-items: center
 		justify-content: flex-start
+		padding: 0px
 		h1
 			margin-left: 12px
 			font-family: 'Bebas'
@@ -542,7 +541,6 @@ footer
 		border-right: 12px solid #fff
 		padding: 0px
 		.mini_block
-			width: 240px
 			padding-bottom: 40px
 			padding-left: 40px
 			span
@@ -598,6 +596,7 @@ footer
 					flex-wrap: wrap
 					justify-content: space-between
 					padding-top: 5px
+					width: 240px
 					img
 						margin-bottom: 10px		
 				span
@@ -626,10 +625,9 @@ footer
 			position: absolute
 			left: -88px
 		.blog_inf1_img
-			padding-bottom: 24px
-			background: url("../img/blog1.png") no-repeat
-			height: 300px
-			background-size: 100%
+			width: 100%
+			img
+				width: 100%
 		.blog_inf1_text	
 			display: flex
 			padding-top: 30px
@@ -644,6 +642,7 @@ footer
 				color: #bababa	
 			.blog_2_1
 				width: 100%
+				padding-right: 20px
 			.blog_2_2
 				p
 					color: black
@@ -661,10 +660,9 @@ footer
 			position: absolute
 			left: -88px
 		.blog_inf2_img
-			padding-bottom: 24px
-			background: url("../img/blog2.png") no-repeat
-			height: 300px
-			background-size: 100%
+			width: 100%
+			img
+				width: 100%
 		.blog_inf1_text	
 			display: flex
 			padding-top: 30px
@@ -682,6 +680,7 @@ footer
 					color: #e8603c
 			.blog_2_1
 				width: 100%
+				padding-right: 20px
 			.blog_2_2
 				p
 					color: black	
@@ -696,10 +695,9 @@ footer
 			position: absolute
 			left: -88px
 		.blog_inf3_img
-			padding-bottom: 24px
-			background: url("../img/blog3.png") no-repeat
-			height: 300px
-			background-size: 100%
+			width: 100%
+			img
+				width: 100%
 		.blog_inf1_text	
 			display: flex
 			padding-top: 30px
@@ -717,6 +715,7 @@ footer
 					color: #e8603c	
 			.blog_2_1
 				width: 100%
+				padding-right: 20px
 			.blog_2_2
 				p
 					color: black
@@ -842,6 +841,7 @@ footer
 			width: 100%
 			max-width: 940px
 			font-family: 'Bebas'
+			line-height: 16px
 			.block
 				display: flex
 				flex-direction: column
@@ -894,12 +894,20 @@ footer
 .s6
 	padding-top: 30px
 	padding-bottom: 30px
+	padding-right: 20px
+	padding-left: 20px
 	.wrapper
 		display: flex
 		border-left: 12px solid #fff
 		border-right: 12px solid #fff
+		padding: 0px
 		.contact_us
 			display: flex
+			.contact
+				.map
+					width: 100%
+					img
+						width: 100%
 			.contact2
 				padding-top: 36px
 				display: flex
@@ -920,6 +928,7 @@ footer
 				.contact_4
 					display: flex
 					flex-direction: column
+					width: 100%
 					input
 						border: none
 						border: 1px solid #e8603c
@@ -929,11 +938,14 @@ footer
 					textarea
 						font-family: 'bebas'
 						height: 210px
-						width: 465px
 						max-width: 100%
 						padding: 10px
 						border: none
 						border: 1px solid #e8603c
+						resize: vertical
+						min-height: 50px
+						height: 100px
+						max-height: 300px
 
 
 					button
@@ -1019,5 +1031,19 @@ footer
 						white-space: pre
 				p
 					font-size: 14px		
+
+.s7
+	.wrapper
+		max-width: 940px
+		padding: 0 12px
+		.portfolio_item1
+			padding: 0 10px
+			padding-top: 24px
+			img
+				width: 100%
+				padding-bottom: 25px
+			p
+				font-family: 'helvetica'
+				font-size: 12px	
 
 @import "_media"
