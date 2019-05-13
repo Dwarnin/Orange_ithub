@@ -1,0 +1,1023 @@
+@import "_fonts"
+@import "_libs"
+@import "_vars"
+
+// @import "../slider/slick.css"
+// @import "../slider/slick-theme.css"
+// @import "../slider/slick.js"
+// @import "../slider/s"
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit;
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section 
+	display: block
+
+body 
+	line-height: 1
+
+ol, ul 
+	list-style: none
+
+blockquote, q 
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+	content: ''
+	content: none
+
+table 
+	border-collapse: collapse
+	border-spacing: 0
+
+
+body
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	line-height: 14px
+section
+	display: flex
+	justify-content: center
+	align-items: center
+	background: url("../img/bg_site.png")
+.wrapper
+	width: 100%
+	max-width: 920px
+	padding: 0 20px
+header
+	display: flex
+	justify-content: center
+	align-items: center
+	padding-bottom: 21px
+	padding-top: 21px
+	.wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-family: 'Bebas'
+		.menu
+			width: 100%
+			display: flex
+			justify-content: space-between		
+			a 
+				text-decoration: none
+				color: #f3af9d
+				font-size: 28px
+				span
+					color: #e8603c
+			ul
+				display: flex
+				width: 388px
+				justify-content: space-between
+				li
+					a
+						transition: 0.5s
+						text-decoration: none
+						color: #b9b9b9
+						font-size: 16px
+						&:hover
+							color: #e8603c
+		.hamburger__menu
+			display: none
+			width: 40px
+			height: 40px
+			.hamburger
+				display: none
+				right: 0px
+				top: 0px
+				background-color: #e8663c
+				position: fixed
+				width: 50%
+				opacity: .9
+				height: 100%
+				white-space: pre
+				a
+					text-decoration: none
+					color: #f3af9d
+					font-size: 28px
+					display: flex
+					justify-content: center
+					span
+						color: #ea3100
+
+				ul
+					display: flex
+					flex-direction: column
+					padding-top: 10px
+					text-align: center
+
+					li
+						padding: 20px
+						a
+							transition: 0.5s
+							text-decoration: none
+							color: #b9b9b9
+							font-size: 22px
+							&:hover
+								color: #e8603c
+			.menu__icon
+				a
+					display: flex
+					flex-direction: column
+					width: 50px
+					height: 50px
+					span
+						width: 40px
+						height : 8px
+						margin: 2px
+						background-color: #e8663c
+		
+.s1
+	.wrapper
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+		.info
+			display: flex
+			align-items: flex-start
+			flex-direction: column
+			width: 280px
+			.h1
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding-bottom: 40px
+				img
+					margin-right: 22px
+				h1
+					font-size: 18px
+					color: #e8663c
+					font-family: 'Bebas'
+					line-height: 20px
+
+		.text
+			display: flex
+			align-items: flex-start
+			padding-bottom: 22px
+			span
+				font-size: 11px
+				font-family: 'Helvetica'
+		a
+			display: flex
+			align-items: center
+			justify-content: center
+			background-color: #e8663c
+			color: #fff
+			width: 56px
+			height: 31px
+			text-decoration: none
+			transition-property: width
+			transition: 1s
+			font-family: 'Bebas'
+			font-size: 14px
+			&:hover
+				width: 80px
+				opacity: 0.5
+				transition: 1s
+
+
+.s2
+	padding: 0 20px
+	.wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+
+		.line
+			display: flex
+			align-items: center
+			justify-content: space-between
+			width: 940px
+			padding-top: 41px
+			width: 100%
+			p
+				color: #e8663c
+				font-family: 'Bebas'
+				white-space: pre
+			i
+				background: url("../img/line.png")
+				width: 807px
+				height: 20px
+
+
+		.blocks
+			display: flex
+			padding-bottom: 30px
+			flex-wrap: wrap
+			align-items: center
+			justify-content: space-between
+			padding-top: 25px
+			width: 100%
+			max-width: 940px
+			font-family: 'Bebas'
+			.block
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				text-align: start
+				border: 0.5px solid #dbdbdb
+				margin-bottom: 41px
+				padding-bottom: 15px
+				width: 220px
+				text-decoration: none
+				&:hover
+					.block_bg
+						&:before
+							opacity: 1
+						img
+							opacity: 0.3
+				.block_bg
+					background-color: black
+					position: relative
+					&:before
+						content: ''
+						background: url('../img/plus.png') center no-repeat
+						background-size: 100% 100%
+						width: 38px
+						height: 38px
+						position: absolute
+						left: calc(50% - 19px)
+						top: calc(50% - 19px)
+						opacity: 0
+						transition: .3s
+				h3
+					font-size: 16px
+					color: #b9b9b9
+					margin: 1px
+					margin-left: 10px
+					margin-top: 10px
+					a
+						text-decoration: none
+						color: #b9b9b9
+				p
+					color: #e8663c
+					margin: 1px
+					margin-left: 10px
+					font-size: 12px
+				img
+					width: 100%
+					transition: 0.4s
+					background-color: black
+					color: black
+
+
+footer
+	display: flex
+	justify-content: center
+	align-items: center
+	background: #f3b29d
+	.wrapper
+		display: flex
+		justify-content: space-between
+		max-width: 964px
+		.wrapper_2
+			background-color: #e8663c
+			width: 100%
+			display: flex
+			justify-content: space-between
+			color: #fff
+			padding-left: 35px
+			padding-right: 35px
+			padding-bottom: 33px
+			padding-top: 39px
+			border-left: 12px solid #fff
+			border-right: 12px solid #fff
+			font-family: 'Helvetica'
+			// flex-wrap: wrap
+
+
+			h3
+				font-family: 'Bebas'
+				font-size: 20px
+				padding-bottom: 31px
+			.footer_text 
+				display: flex
+				flex-direction: column
+				font-size: 12px
+				width: 220px
+				a
+					text-decoration: none
+					color: orange
+			.footer_text_start
+				display: flex
+				flex-direction: column
+				font-size: 12px
+				width: 256px
+			.footer_text_end
+				display: flex
+				flex-direction: column
+				font-size: 12px
+				width: 257px
+				ul
+					display: flex
+					padding-left: 0px
+					padding-top: 21px
+					li
+						margin-right: 5px
+				a
+					text-decoration: none
+					color: orange
+					img
+						&:hover
+							transform: scale(1.10)
+
+
+
+.about_us
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: #f3b29d
+	.wrapper
+		background-color: #e8603c
+		border-left: 12px solid #fff
+		border-right: 12px solid #fff
+		height: 61px
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		h1
+			margin-left: 12px
+			font-family: 'Bebas'
+			font-size: 20px
+			color: #fff
+.s3
+	padding: 0 20px
+	padding-top: 30px
+	.wrapper
+		display: flex
+		border-left: 12px solid #fff
+		border-right: 12px solid #fff
+		padding: 0px
+		.big_block
+			width: 670px
+			font-family: 'Helvetica'
+			p
+				font-size: 12px
+				line-height: 18px
+			.big_block2
+				display: flex
+				align-items: flex-start
+				p
+					padding-left: 23px
+					font-size: 12px
+			.big_block3		
+				.D
+					font-size: 30px
+					font-family: 'Helvetica';
+					font-weight: bold
+					color: #e8603c
+				p
+					font-size: 12px
+			.big_block4
+				display: flex
+				img
+					padding-left: 54px
+				p
+					padding-left: 19px
+					12px
+			.big_block5
+				display: flexpx
+			.big_block6
+				display: flex
+				p
+					margin-right: 10px
+					12px
+			.big_block7
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				padding-top: 31px
+				.span1
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%
+					height: 60px
+					background-color: #effeb9
+					margin-bottom: 18px
+					border: 1px solid #98c601
+					font-family: 'Helvetica'
+					font-weight: bold
+					font-style: italic
+				.span2
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%
+					height: 60px
+					background-color: #fbcbc1
+					margin-bottom: 18px
+					border: 1px solid #eb5439
+					font-family: 'Helvetica'
+					font-weight: bold
+					font-style: italic
+				.span3
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%
+					height: 60px
+					background-color: #ffe9ad
+					margin-bottom: 18px
+					border: 1px solid #fab418
+					font-family: 'Helvetica'
+					font-weight: bold
+					font-style: italic
+				.span4
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 100%
+					height: 60px
+					background-color: #d1e4f3
+					margin-bottom: 18px
+					border: 1px solid	#4d8fcb
+					font-family: 'Helvetica'
+					font-weight: bold
+					font-style: italic
+
+		.mini_block
+			width: 240px
+			padding-bottom: 40px
+			padding-left: 40px
+			span
+				display: flex
+				align-items: center
+				font-family: 'bebas'
+				font-size: 16px
+				padding-bottom: 21px
+				h3
+					width: auto
+					margin-right: 15px
+					color: #e8603c
+					white-space: pre
+				i
+					background: url("../img/line.png")
+					width: 100%
+					height: 20px
+			p
+				font-size: 14px
+				font-family: 'Helvetica'
+				font-size: 12px
+			.mini_block2
+				padding-top: 40px
+				padding-bottom: 40px
+				ul
+					padding-left: 0px
+					li
+						a
+							color: black
+							text-decoration: none
+							font-family: 'Helvetica'
+							font-size: 12px
+				span
+					display: flex
+					align-items: center
+					font-family: 'bebas'
+					font-size: 16px
+					padding-bottom: 21px
+					h3
+						width: auto
+						margin-right: 15px
+						color: #e8603c
+					i
+						background: url("../img/line.png")
+						width: 100%
+						height: 20px
+				p
+					font-size: 14px	
+			.mini_block3
+				.gallery
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					padding-top: 5px
+					img
+						margin-bottom: 10px		
+				span
+					display: flex
+					align-items: center
+					font-family: 'bebas'
+					font-size: 16px
+					padding-bottom: 21px
+					h3
+						width: auto
+						margin-right: 15px
+						color: #e8603c
+				p
+					font-size: 14px		
+.s4
+	padding-left: 20px
+	padding-right: 20px
+	padding-top: 30px
+	.wrapper
+		display: flex
+		border-left: 12px solid #fff
+		border-right: 12px solid #fff
+		padding: 0px
+		.mini_block
+			width: 240px
+			padding-bottom: 40px
+			padding-left: 40px
+			span
+				display: flex
+				align-items: center
+				font-family: 'bebas'
+				font-size: 16px
+				padding-bottom: 21px
+				h3
+					width: auto
+					margin-right: 15px
+					color: #e8603c
+					white-space: pre
+				i
+					background: url("../img/line.png")
+					width: 100%
+					height: 20px
+			p
+				font-size: 14px
+				font-family: 'Helvetica'
+				font-size: 12px
+			.mini_block2
+				padding-top: 40px
+				padding-bottom: 40px
+				ul
+					padding-left: 0px
+					li
+						a
+							color: black
+							text-decoration: none
+							font-family: 'Helvetica'
+							font-size: 12px
+				span
+					display: flex
+					align-items: center
+					font-family: 'bebas'
+					font-size: 16px
+					padding-bottom: 21px
+					h3
+						width: auto
+						margin-right: 15px
+						color: #e8603c
+						white-space: pre
+					i
+						background: url("../img/line.png")
+						width: 100%
+						height: 20px
+				p
+					font-size: 14px	
+			.mini_block3
+				.gallery
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					padding-top: 5px
+					img
+						margin-bottom: 10px		
+				span
+					display: flex
+					align-items: center
+					font-family: 'bebas'
+					font-size: 16px
+					padding-bottom: 21px
+					h3
+						width: auto
+						margin-right: 15px
+						color: #e8603c
+						white-space: pre
+				p
+					font-size: 14px
+.blog
+	display: flex
+	flex-direction: column
+	.blog1
+		display: flex
+		flex-direction: column
+		padding-bottom: 40px
+		position: relative
+		&:before
+			content: url('../img/img_ab1.png')
+			position: absolute
+			left: -88px
+		.blog_inf1_img
+			padding-bottom: 24px
+			background: url("../img/blog1.png") no-repeat
+			height: 300px
+			background-size: 100%
+		.blog_inf1_text	
+			display: flex
+			padding-top: 30px
+			h3
+				font-family: 'bebas'
+				color: #e8603c
+				padding-bottom: 13px
+			p
+				font-family: 'Helvetica'
+				font-size: 12px
+				padding-bottom: 13px
+				color: #bababa	
+			.blog_2_1
+				width: 100%
+			.blog_2_2
+				p
+					color: black
+				a
+					text-decoration: none
+					color: #e8603c
+	.blog2
+		display: flex
+		flex-direction: column
+		padding-top: 52px
+		padding-bottom: 40px
+		position: relative
+		&:before
+			content: url('../img/img_ab2.png')
+			position: absolute
+			left: -88px
+		.blog_inf2_img
+			padding-bottom: 24px
+			background: url("../img/blog2.png") no-repeat
+			height: 300px
+			background-size: 100%
+		.blog_inf1_text	
+			display: flex
+			padding-top: 30px
+			h3
+				font-family: 'bebas'
+				color: #e8603c
+				padding-bottom: 13px
+			p
+				font-family: 'Helvetica'
+				font-size: 12px
+				padding-bottom: 13px
+				color: #bababa	
+			a
+					text-decoration: none
+					color: #e8603c
+			.blog_2_1
+				width: 100%
+			.blog_2_2
+				p
+					color: black	
+	.blog3
+		display: flex
+		flex-direction: column
+		padding-top: 52px
+		padding-bottom: 40px
+		position: relative
+		&:before
+			content: url('../img/img_ab3.png')
+			position: absolute
+			left: -88px
+		.blog_inf3_img
+			padding-bottom: 24px
+			background: url("../img/blog3.png") no-repeat
+			height: 300px
+			background-size: 100%
+		.blog_inf1_text	
+			display: flex
+			padding-top: 30px
+			h3
+				font-family: 'bebas'
+				color: #e8603c
+				padding-bottom: 13px
+			p
+				font-family: 'Helvetica'
+				font-size: 12px
+				padding-bottom: 13px
+				color: #bababa
+			a
+					text-decoration: none
+					color: #e8603c	
+			.blog_2_1
+				width: 100%
+			.blog_2_2
+				p
+					color: black
+	.blog4
+		display: flex
+		flex-direction: column
+		padding-top: 52px
+		padding-bottom: 40px
+		position: relative
+		&:before
+			content: url('../img/img_ab4.png')
+			position: absolute
+			left: -88px
+		.blog_inf1_text	
+			display: flex
+			background-color: #f0f0f0
+			height: 76px
+			align-items: center
+			h3
+				font-family: 'bebas'
+				color: #e8603c
+				padding-bottom: 13px
+				a
+					text-decoration: none
+					color: #e8603c
+			p
+				font-family: 'HelveticaNeueCyr-Italic'
+				font-size: 14px
+				padding-bottom: 13px
+			span
+				font-size: 72px
+				color: #e8603c
+				font-family: 'bebas'
+				display: flex
+				justify-content: flex-start
+				align-items: start
+				margin-left: 24px
+				margin-top: 27px
+				width: 50px
+				height: 75px	
+	.blog5
+		display: flex
+		flex-direction: column
+		padding-top: 52px
+		padding-bottom: 40px
+		position: relative
+		&:before
+			content: url('../img/img_ab5.png')
+			position: absolute
+			left: -88px
+		.blog_inf1_text	
+			display: flex
+			flex-direction: column
+			h3
+				font-family: 'bebas'
+				color: #e8603c
+				padding-bottom: 13px
+				a
+					text-decoration: none
+					color: #e8603c
+			p
+				font-family: 'Helvetica'
+				font-size: 14px
+				padding-bottom: 13px
+			a
+				text-decoration: none
+				color: #bababa
+				padding-bottom: 30px													
+	i
+		background: url("../img/line.png")
+		width: 100%	
+		height: 20px
+	.dots
+		padding-top: 52px
+		padding-bottom: 40px
+		button
+			background-color: #e8603c
+			border: none
+			width: 26px
+			height: 26px
+			color: #fff
+			font-family: 'bebas'
+			transition: 0.5s
+			&:hover
+				opacity: 0.5				
+.s5
+	.wrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+
+		.blog_menu
+			display: flex
+			align-items: center
+			justify-content: flex-start
+			width: 100%
+			padding-top: 41px
+			ul
+				display: flex
+				justify-content: space-between
+				a
+					text-decoration: none
+					color: #b9b9b9
+					font-family: 'Bebas'
+					padding-top: 9px
+					padding-bottom: 9px
+					padding-left: 10px
+					padding-right: 12px
+					&:hover
+						background-color: #e8663c
+						transition: 1s
+						color: #fff
+
+
+		.blocks
+			display: flex
+			padding-bottom: 30px
+			flex-wrap: wrap
+			align-items: center
+			justify-content: space-between
+			padding-top: 25px
+			width: 100%
+			max-width: 940px
+			font-family: 'Bebas'
+			.block
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				text-align: start
+				border: 0.5px solid #dbdbdb
+				margin-bottom: 41px
+				padding-bottom: 15px
+				width: 220px
+				text-decoration: none
+				&:hover
+					.block_bg
+						&:before
+							opacity: 1
+						img
+							opacity: 0.3
+				.block_bg
+					background-color: black
+					position: relative
+					&:before
+						content: ''
+						background: url('../img/plus.png') center no-repeat
+						background-size: 100% 100%
+						width: 38px
+						height: 38px
+						position: absolute
+						left: calc(50% - 19px)
+						top: calc(50% - 19px)
+						opacity: 0
+						transition: .3s
+				h3
+					font-size: 16px
+					color: #b9b9b9
+					margin: 1px
+					margin-left: 10px
+					margin-top: 10px
+					a
+						text-decoration: none
+						color: #b9b9b9
+				p
+					color: #e8663c
+					margin: 1px
+					margin-left: 10px
+					font-size: 12px
+				img
+					width: 100%
+					transition: 0.4s
+					background-color: black
+					color: black
+.s6
+	padding-top: 30px
+	padding-bottom: 30px
+	.wrapper
+		display: flex
+		border-left: 12px solid #fff
+		border-right: 12px solid #fff
+		.contact_us
+			display: flex
+			.contact2
+				padding-top: 36px
+				display: flex
+				padding-bottom: 34px
+				.contact_3
+					padding-right: 32px
+					width: 178px
+					font-family: 'Helvetica'
+					font-size: 12px
+					span
+						font-family: 'HelveticaNeueCyr-Medium'
+					h4
+						font-family: 'Helvetica-Bold'
+						color: #e8603c
+					a
+						text-decoration: none
+						color: black
+				.contact_4
+					display: flex
+					flex-direction: column
+					input
+						border: none
+						border: 1px solid #e8603c
+						font-family: 'bebas'
+						width: 217px
+						padding: 10px
+					textarea
+						font-family: 'bebas'
+						height: 210px
+						width: 465px
+						max-width: 100%
+						padding: 10px
+						border: none
+						border: 1px solid #e8603c
+
+
+					button
+						background-color: #e8603c
+						border: none
+						width: 68px
+						height: 26px
+						color: #fff
+						font-family: 'bebas'
+						transition: 0.5s
+						&:hover
+							opacity: 0.5
+							transition: 0.5s	
+			.mini_block
+				width: 240px
+				padding-bottom: 40px
+				padding-left: 40px
+				span
+					display: flex
+					align-items: center
+					font-family: 'bebas'
+					font-size: 16px
+					padding-bottom: 21px
+					h3
+						width: auto
+						margin-right: 15px
+						color: #e8603c
+						white-space: pre
+					i
+						background: url("../img/line.png")
+						width: 100%
+						height: 20px
+				p
+					font-size: 14px
+					font-family: 'Helvetica'
+					font-size: 12px		
+				.mini_block2
+				padding-top: 40px
+				padding-bottom: 40px
+				ul
+					padding-left: 0px
+					li
+						a
+							color: black
+							text-decoration: none
+							font-family: 'Helvetica'
+							font-size: 12px
+				span
+					display: flex
+					align-items: center
+					font-family: 'bebas'
+					font-size: 16px
+					padding-bottom: 21px
+					h3
+						width: auto
+						margin-right: 15px
+						color: #e8603c
+						white-space: pre
+					i
+						background: url("../img/line.png")
+						width: 100%
+						height: 20px
+				p
+					font-size: 14px	
+			.mini_block3
+				.gallery
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					padding-top: 5px
+					img
+						margin-bottom: 10px		
+				span
+					display: flex
+					align-items: center
+					font-family: 'bebas'
+					font-size: 16px
+					padding-bottom: 21px
+					h3
+						width: auto
+						margin-right: 15px
+						color: #e8603c
+						white-space: pre
+				p
+					font-size: 14px		
+
+@import "_media"
