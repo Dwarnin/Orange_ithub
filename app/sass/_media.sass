@@ -5,28 +5,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	
-	.s6
-		.wrapper
-			.contact_us
-				flex-direction: column
-				align-items: center
-				.mini_block
-					width: 100%
-					padding: 0px
-					display: flex
-					justify-content: space-between
-					.mini_block1
-						width: 100%
-						max-width: 250px
-						padding: 10px
-					.mini_block2
-						width: 100%
-						max-width: 250px
-						padding: 10px
-					.mini_block3
-						width: 100%
-						max-width: 230px
-						padding: 10px
+
 
 
 	.s4
@@ -115,24 +94,7 @@
 							left: 100px
 							position: absolute
 
-	.s4
-		.wrapper
-			flex-direction: column
-			align-items: center
-			.mini_block
-				width: 100%
-				padding: 0px
-				display: flex
-				justify-content: space-between
-				.mini_block1
-					width: 270px
-					padding: 0px
-				.mini_block2
-					width: 100px
-					padding: 0px
-				.mini_block3
-					width: 240px
-					padding: 0px
+
 
 	.s3
 		.wrapper
@@ -150,41 +112,52 @@
 
 @media only screen and (max-width : 700px)
 
-
 	.s6
-	.wrapper
-		.contact_us
+		.wrapper
 			flex-direction: column
-			align-items: center
-			.contact2
+			.contact_us
 				flex-direction: column
-				.contact_3
-					padding-bottom: 20px
+				.mini_block
+					width: 100%
+					padding: 0px
+					.mini_block1
+						width: 100%
+					.mini_block2
+						width: 100%
+					.mini_block3
+						width: 100%
+						.gallery
+							width: 240px
+
+	.s4
+		.wrapper
+			flex-direction: column
 			.mini_block
-				width: 100%
 				padding: 0px
-				display: flex
-				justify-content: space-between
-				flex-direction: column
 				.mini_block1
-					width: 250px
-					padding: 20px
+					width: 100%
+					padding: 10px
 				.mini_block2
-					width: 250px
-					padding: 20px
+					width: 100%
+					padding: 10px
 				.mini_block3
-					width: 250px
-					padding: 20px
+					width: 100%
+					padding: 10px
+
+
 
 	.s4
 		.wrapper
 			.blog
-				.blog_inf1_img
-					height: 240px
-				.blog_inf2_img
-					height: 240px
-				.blog_inf3_img
-					height: 240px		
+				.blog1
+					.blog_inf1_img
+						height: 100%
+				.blog2		
+					.blog_inf2_img
+						height: 100%
+				.blog3		
+					.blog_inf3_img
+						height: 100%	
 
 	.s3
 		.wrapper
@@ -195,15 +168,12 @@
 				padding: 0px
 				.mini_block1
 					width: 100%
-					max-width: 250px
 					padding: 10px
 				.mini_block2
 					width: 100%
-					max-width: 250px
 					padding: 10px
 				.mini_block3
 					width: 100%
-					max-width: 230px
 					padding: 10px
 
 
@@ -230,6 +200,16 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 600px)
+
+	.s6
+		.wrapper
+			.contact_us
+				.mini_block
+					flex-direction: column
+				.mini_block3
+					.gallery
+						display: -webkit-box
+						padding-bottom: 20px
 
 	.slider
 		.wrapper
@@ -371,7 +351,16 @@
 			.mini_block3
 				.gallery
 					display: -webkit-box
-					padding-bottom: 20px				
+					padding-bottom: 20px	
+	.s6
+		.wrapper
+			.contact_us
+				.mini_block
+					flex-direction: column
+				.mini_block3
+					.gallery
+						display: -webkit-box
+						padding-bottom: 20px							
 
 
 /*==========  Mobile First  ==========*/
